@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US" class="bg-base-200"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width,user-scalable=no"> -->
+  <title>Vdb</title>
+
+  <link rel="stylesheet" href="/vdb/assets/css/app.css">
+  <script src="/vdb/assets/js/mobilecheck.js"></script>
+</head><body class="flex flex-col h-[100vh]">
+    <div class="backdrop">
+      <div class="image" style="background: url( /vdb/assets/img/mistlandsart1.jpg );"></div>
+      <div class="darken"></div>
+    </div>    
+
+    <div data-tooltip-host class="tooltip-host">
+      <div data-tooltip-content class="tooltip-content z-10 bg-base-300 invisible">This is an empty tooltip</div>
+    </div>
+
+    <!-- <div class="header flex-grow-0 flex-shrink basis-0"></div> -->
+
+    <main id="main" class="container flex-auto mx-auto p-2 md:p-4 lg:p-12 xl:p-12">
+
+      <div class="card w-full p-7 pb-2 max-w-3xl mx-auto bg-black/10 bg-opacity-90 backdrop-blur text-base-content shadow-md">
+        <div class="dropdown dropdown-close"> <!-- dropdown-open -->
+          <div class="form-control">
+              <form role="search" data-search-form class="w-full hidden" action="#">
+              <input data-search-input type="search" name="Search" placeholder="Search..." class="search input input-bordered bg-black/20 w-full focus:outline-black/10 focus:outline-offset-0"
+                autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" spellcheck="false" value="" />
+
+                <button type="button" data-search-clear class="btn btn-sm absolute top-0 right-12 w-12 h-12 rounded-none border-none bg-transparent hover:bg-black">
+                  <svg xmlns='http://www.w3.org/2000/svg' class='h-4 w-4' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /></svg>
+                </button>
+                <button type="button" data-search-button class="btn btn-sm absolute top-0 right-0 w-12 h-12 border-none bg-base-200/30 hover:bg-black rounded-bl-none rounded-tl-none">
+                  <svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#d6d1d4" style="transform: scale(1);"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" /></svg>
+                </button>
+
+              </form>
+            </div></div>
+        
+        <ul data-nav-list class="menu menu-horizontal pt-3 px-1 mx-auto -mt-6"><li><a data-nav="items" class="no-underline mx-1" href="/vdb/items">Items</a></li>
+<li><a data-nav="pieces" class="no-underline mx-1" href="/vdb/pieces">Pieces</a></li>
+<li><a data-nav="recipes" class="no-underline mx-1" href="/vdb/recipes">Recipes</a></li>
+</ul>
+      </div>
+
+      <div data-search-results class="results list flex flex-wrap justify-center items-stretch gap-2 md:gap-3 lg:gap-4 mt-16">
+  <div class="result card basis-full md:basis-[48%] lg:basis-[32%] p-1 rounded-md border-2 border-base-200 text-left text-sm bg-wood-panel" style="background-position:;">
+    <div class="h-full p-2 rounded-md border-none bg-black/30">
+      <div class="flex flex-col h-full max-w-full" data-prefab="Fish8" data-type="Fish" data-content="Coral cod Fish8 Fish It has seen some things... Some very haunting">
+  <!-- { % base64 iconpath % } This works now.  Will enable later on  rounded-md bg-black/20 --><div class="icon-container absolute right-2 top-2 w-16 h-16">
+    <img class="prefab-icon max-h-full max-w-full m-auto" src="/vdb/assets/img/items/Fish8_icon.png"><div class="text-xs text-center -mt-4">1/10</div></div><div class="absolute left-2 top-2 h-6">
+    <div data-toggle-parent class="rating invisible"><input type="radio" name="rating-2" data-toggle-trigger="1" class="mask mask-star-2 bg-gradient-to-br from-[#f4a249] to-[#bc7c36] mr-0.5" checked /><input type="radio" name="rating-2" data-toggle-trigger="2" class="mask mask-star-2 bg-gradient-to-br from-[#f4a249] to-[#bc7c36] mr-0.5"  /><input type="radio" name="rating-2" data-toggle-trigger="3" class="mask mask-star-2 bg-gradient-to-br from-[#f4a249] to-[#bc7c36] mr-0.5"  /><input type="radio" name="rating-2" data-toggle-trigger="4" class="mask mask-star-2 bg-gradient-to-br from-[#f4a249] to-[#bc7c36] mr-0.5"  /><input type="radio" name="rating-2" data-toggle-trigger="5" class="mask mask-star-2 bg-gradient-to-br from-[#f4a249] to-[#bc7c36] mr-0.5"  /></div>
+  </div><div class="item-header flex-0">
+    <div class="text-center"><span class="text-title-peach text-base" data-name="Coral cod" class="name">Coral cod</span></div>
+  </div>
+  <div class="item-body flex-auto text-ellipsis">
+    <span class="description block mr-16">It has seen some things... Some very haunting things...</span><br/><span data-type="Fish" class="type">Fish</span><br/>Weight: <span class="text-stat-gold">2.0</span></div>
+  <div class="item-footer flex-0"><br/>Ingredient in 2 <a class="item whitespace-nowrap" data-nav="recipes+Fish8" href="/vdb/recipes">recipes</a>.
+      <div class="flex flex-wrap justify-centerpt-0.5"><div class="icon-container relative p-0.5 mt-0.5 mr-0.5 rounded-sm border-none bg-black/30 w-16 h-16">
+                <a data-tooltip data-nav="details" class="item" href="/vdb/items/FishRaw">
+                  <img class="prefab-icon max-h-full max-w-full m-auto" src="/vdb/assets/img/items/FishRaw_icon.png">
+                  <div class="text-xs absolute top-1 text-center -ml-1 -mb-4 w-full max-w-full text-shadow-md shadow-black">Raw fish</div>
+                  
+                </a>
+              </div><div class="icon-container relative p-0.5 mt-0.5 mr-0.5 rounded-sm border-none bg-black/30 w-16 h-16">
+                <a data-tooltip data-nav="details" class="item" href="/vdb/items/HelmetFishingHat">
+                  <img class="prefab-icon max-h-full max-w-full m-auto" src="/vdb/assets/img/items/HelmetFishingHat_icon.png">
+                  <div class="text-xs absolute top-1 text-center -ml-1 -mb-4 w-full max-w-full text-shadow-md shadow-black">Fishing hat</div>
+                  
+                </a>
+              </div></div><div class="text-right pt-0.5">
+      <span class="type text-base-content/60">Prefab: Fish8</span>
+    </div>
+  </div>
+</div>
+<script>(function(w) { w.location = "/#details+/items/Fish8";}(window));</script>
+    </div>
+  </div>
+</div>
+
+      <dialog data-tooltip-dialog class="modal modal-bottom sm:modal-middle">
+        <form data-tooltip-form method="dialog" class="modal-box rounded-sm bg-black/80 text-base-content">
+          <h3 class="font-bold text-lg">Hello!</h3>
+          <span class="loading loading-spinner loading-md cursor-progress"></span>
+          <p class="py-4">Press ESC key or click outside to close</p>
+        </form>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+
+    </main>
+
+    <div class="footer flex-grow-0 flex-shrink basis-10 max-w-2xl w-full p-4 mx-auto"><footer class="footer footer-center max-w-2xl w-full p-4 mx-auto">
+  <div>
+    <p>Valheim © Iron Gate Studios.  Vdb was created with love under IronGate's <a class="underline" href="https://www.valheimgame.com/eula">Game Content Usage Guidelines</a> using assets from Valheim, and it is not endorsed by or affiliated with IronGate.</p>
+  </div>
+</footer>
+</div>
+
+    <script type="module" src="/vdb/assets/js/appbundle.js"></script>
+  </body>
+
+</html>    
