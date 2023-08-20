@@ -8,4 +8,4 @@
           <div class="h-full p-2 rounded-md border-none bg-black/30">
             ${e.content.outerHTML}
           </div>
-        </div>`,stringToHTML(t)},createResultItem(e){return stringToHTML(e.template)},render(){App.updateNav(),App.updateClearButton(),Model.details?App.view.searchResults.replaceChildren(App.createDetailItem(Model.details)):App.view.searchResults.replaceChildren(...Model.visibleItems.map(e=>App.createResultItem(e))),App.bindItemNavEvents(),Tooltips.bindEvents()}};App.init("/",!!window.mobileAndTabletCheck&&window.mobileAndTabletCheck());
+        </div>`,stringToHTML(t)},createResultItem(e){return stringToHTML(e.template)},render(){App.updateNav(),App.updateClearButton(),Model.details?App.view.searchResults.replaceChildren(App.createDetailItem(Model.details)):App.view.searchResults.replaceChildren(...Model.visibleItems.map(e=>App.createResultItem(e))),App.bindItemNavEvents(),Tooltips.bindEvents()}};App.init("",!!window.mobileAndTabletCheck&&window.mobileAndTabletCheck());
